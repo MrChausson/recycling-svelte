@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply font-inter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    @apply text-[32px] font-bold leading-[1.11];
+}
+
+h2 {
+    @apply text-[20px] font-bold leading-[1.11];
+}
+
+h3 {
+    @apply text-[18px] font-semibold leading-[1.11];
+}
+
+
+@layer components {
+    .subtitle {
+        @apply text-[16px] text-normal tracking-[0.5px];
+    }
+}
