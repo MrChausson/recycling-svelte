@@ -1,4 +1,5 @@
 <script lang="ts">
+    export let title: string;
     export let aosAnim: string = "fade-up";
     export let aosDelay: string = "400";
 
@@ -6,7 +7,17 @@
 </script>
 
 <button on:click class="w-[90%] h-40 flex justify-start items-start rounded-4xl shadow-light-32 relative {elClass}" data-aos={aosAnim} data-aos-delay={aosDelay}>
-    <slot/>
+    <div class="mt-4 ml-6">
+        <div class="flex items-end">
+            <slot name="icon"/>
+    
+            <h2 class="ml-1">
+                {title}
+            </h2>
+        </div>
+
+        <slot name="subtitle"/>
+    </div>
 
     <div class="absolute top-4 right-3">
         <svg class="text-light" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
