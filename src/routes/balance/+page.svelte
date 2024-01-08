@@ -3,7 +3,7 @@
 
 </script>
 
-<header>
+<header class="overflow-x-clip">
     <div class="w-full inline-flex justify-between">
         <h1 data-aos="fade-right">
             Your Balance
@@ -33,7 +33,7 @@
         History
     </h2>
 
-    <div class="w-full flex flex-col mt-4 overflow-scroll">
+    <div class="w-full max-h-[268px] tall:max-h-none flex flex-col mt-4 overflow-y-scroll">
         <BalanceHistoryRow amount={20} date="04/01/2024"/>
         <BalanceHistoryRow amount={-2000} details="(Amazon 5€ Card)" date="02/01/2024"/>
         <BalanceHistoryRow amount={20} date="28/12/2023"/>

@@ -2,7 +2,7 @@
     // @ts-ignore
     import AOS from 'aos';
     import { onMount } from 'svelte';
-    import Navbar from "$lib/components/Navbar/Navbar.svelte";
+    import Footer from "$lib/components/Footer/Footer.svelte";
 
     import 'aos/dist/aos.css';
     import "../app.css";
@@ -12,10 +12,8 @@
     });
 </script>
 
-<div class="h-screen flex flex-col">
+<div class="flex flex-col relative" style="height: calc(100vh - 48px);">
     <slot />
-
-    <footer class="w-full">
-        <Navbar/>
-    </footer>
 </div>
+
+<Footer/>

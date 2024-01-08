@@ -41,7 +41,7 @@
             04/01/2024
         </svelte:fragment>
 
-        <div class="mt-2 tall:mt-6">
+        <div class="mt-3 tall:mt-6">
             <h3>
                 Collect Statut:
                 <span class="inline-flex justify-center items-center text-success">

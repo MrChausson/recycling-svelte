@@ -4,7 +4,7 @@
     export let details: string = "";
 </script>
 
-<div class="w-full flex justify-between items-center py-2 px-4">
+<div class="w-full flex justify-between items-center py-2 pl-6 pr-4">
     <div>
         <h3 class="{amount > 0 ? 'text-success' : 'text-error'}">
             {amount > 0 ? '+' : ''}{amount} points {details}
