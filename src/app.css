@@ -8,6 +8,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+    @apply px-4 pt-12;
+}
+
 h1 {
     @apply text-[32px] font-bold leading-[1.11];
 }
@@ -19,7 +23,6 @@ h2 {
 h3 {
     @apply text-[18px] font-semibold leading-[1.11];
 }
-
 
 @layer components {
     .subtitle {

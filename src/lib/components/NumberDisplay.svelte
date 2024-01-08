@@ -16,7 +16,8 @@
     }
 
     function transformNumber(nb: number) {
-        if (nb < 1000) return String(nb);
+        if (nb < 1000)
+            return String(nb);
         let s = String(nb);
         let ns: string = s.slice(0, s.length-3) + " " + s.slice(s.length-3, s.length);
         return ns;

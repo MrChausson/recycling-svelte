@@ -11,9 +11,11 @@
         AOS.init();
     });
 </script>
-  
-<slot />
 
-<footer class="w-full fixed bottom-0">
-    <Navbar/>
-</footer>
+<div class="h-screen flex flex-col">
+    <slot />
+
+    <footer class="w-full">
+        <Navbar/>
+    </footer>
+</div>

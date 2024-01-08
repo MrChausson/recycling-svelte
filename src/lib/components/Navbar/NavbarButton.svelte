@@ -4,8 +4,12 @@
     export let label: string;
     export let href: string;
 
-    $: active = href === $page.url.pathname;
-    
+    let active: boolean;
+
+    $: {
+        const split = $page.url.pathname.split('/')[1];
+        active = ($page.url.pathname === href) || (split !== '' && href.includes(split));
+    }
 </script>
 
 <a {href} class="flex-1 flex flex-col justify-center items-center">
