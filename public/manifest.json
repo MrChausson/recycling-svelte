@@ -1,0 +1,17 @@
+{
+  "short_name": "Arenys Collect System",
+  "name": "arenys-collect-system",
+  "description": "Arenys Collect System application",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

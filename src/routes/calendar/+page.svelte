@@ -17,6 +17,10 @@
     }
 </script>
 
+<svelte:head>
+    <link rel="manifest" href="/manifest.json" />
+</svelte:head>
+
 <header>
     <h1 data-aos="fade-right">
         Collect Calendar
